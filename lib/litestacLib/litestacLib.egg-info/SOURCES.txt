@@ -1,0 +1,8 @@
+setup.py
+litestacLib/ls_api.py
+litestacLib/ls_stac.py
+litestacLib.egg-info/PKG-INFO
+litestacLib.egg-info/SOURCES.txt
+litestacLib.egg-info/dependency_links.txt
+litestacLib.egg-info/requires.txt
+litestacLib.egg-info/top_level.txt
