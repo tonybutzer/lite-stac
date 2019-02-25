@@ -6,7 +6,7 @@
 """
 
 from .ls_stac import ls_make_hits_dataframe
-from lilcubeLib.lc_xarray import build_the_xarray
+from xarrayLib.xr_xarray import build_the_xarray
 
 
 class Litestac():
