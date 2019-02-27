@@ -1,0 +1,23 @@
+
+PUT /example
+{
+    "mappings": {
+        "doc": {
+            "properties": {
+                "location": {
+                    "type": "geo_shape"
+                }
+            }
+        }
+    }
+}
+
+POST /example/doc
+{
+    "location" : {
+        "type" : "polygon",
+        "coordinates" : [
+            [ [10.0, 0.0], [11.0, 0.0], [11.0, 1.0], [10.0, 1.0], [10.0, 0.0] ]
+        ]
+    }
+}

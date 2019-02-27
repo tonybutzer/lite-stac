@@ -1,0 +1,22 @@
+GET /datacube/rwanda/_search
+{
+    "query":{
+        "bool": {
+            "must": {
+                "match_all": {}
+            },
+            "filter": {
+                "geo_shape": {
+                    "footprint": {
+                        "shape": {
+                            "type": "envelope",
+                            "coordinates" : [[-119,37], [-119.5, 37.5]]
+                        },
+                        "relation": "contains"
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -28,7 +28,9 @@ class Xpart():
         print("geojson_file is", geojson_file)
         with rasterio.open(redfile) as src:
             print(src.profile)
-        self.crs = src.crs
+        crs = _sanity_check_crs(src)
+        print("CRS", crs)
+        self.crs = crs
         self.affine = src.transform
         bbox = bounding_box_tuple_from_geojson(geojson_file)
         self.bbox = bbox
@@ -61,11 +63,28 @@ class Xpart():
         self.ys = ys
 
 
+def _sanity_check_crs(src):
+
+    tmp = str(src.crs)
+    tmp = tmp.lower()
+    if 'epsg' in tmp:
+        return(src.crs)
+    tmp = str(src.crs)
+    tmp = tmp[0:3]
+    tmp = tmp.lower()
+    if 'epsg' in tmp:
+        return(src.crs)
+    else:
+        # HACK this should call a more sophisticated routine
+        return('EPSG:5072')
+
+
 def _get_xpart_properties(src, bbox):
-    print("TONY1", bbox)
-    print("TONY1", src.crs)
-    x1,y1 = geo_translate(bbox[0][1], bbox[0][0], src.crs)
-    x2,y2 = geo_translate(bbox[1][1], bbox[1][0], src.crs)
+    # print("TONY1", bbox)
+    # print("TONY1", src.crs)
+    crs = _sanity_check_crs(src)
+    x1,y1 = geo_translate(bbox[0][1], bbox[0][0], crs)
+    x2,y2 = geo_translate(bbox[1][1], bbox[1][0], crs)
 
     # print("TONY1",x1,y1)
     # print("TONY1",x2,y2)
