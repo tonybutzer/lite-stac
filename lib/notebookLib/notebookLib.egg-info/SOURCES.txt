@@ -1,0 +1,9 @@
+setup.py
+notebookLib/nb_DEAPlotting.py
+notebookLib/nb_animate.py
+notebookLib/nb_display.py
+notebookLib.egg-info/PKG-INFO
+notebookLib.egg-info/SOURCES.txt
+notebookLib.egg-info/dependency_links.txt
+notebookLib.egg-info/requires.txt
+notebookLib.egg-info/top_level.txt
