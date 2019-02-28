@@ -16,4 +16,6 @@ gdal:
 	pip3 install gdal
 
 
+ffmpeg:
+	sudo apt-get -y install ffmpeg
 

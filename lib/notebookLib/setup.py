@@ -13,6 +13,8 @@ setup(name='notebookLib',
           'matplotlib',
           'shapely',
           'scikit-image',
+          'geopandas',
+          'ffmpeg',
       ],
 
       )
