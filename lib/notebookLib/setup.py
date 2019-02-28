@@ -11,6 +11,8 @@ setup(name='notebookLib',
       ],
       install_requires=[
           'matplotlib',
+          'shapely',
+          'scikit-image',
       ],
 
       )

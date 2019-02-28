@@ -1,1 +1,4 @@
 affine
+boto3
+dask
+toolz

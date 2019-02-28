@@ -11,6 +11,9 @@ setup(name='xarrayLib',
       ],
       install_requires=[
           'affine',
+          'boto3',
+          'dask',
+          'toolz',
       ],
 
       )

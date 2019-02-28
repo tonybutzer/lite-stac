@@ -11,6 +11,12 @@ setup(name='litestacLib',
       ],
       install_requires=[
           'sat-search',
+          'pandas',
+          'rasterio',
+          'xarray',
+          'geojson',
+          'pyproj',
+          'pygeoj',
       ],
 
       )
