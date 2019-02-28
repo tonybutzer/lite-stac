@@ -6,3 +6,6 @@ publish:
 	git commit -m "automatic git update from Makefile"
 	git push
 
+sandbox:
+	cp ./anotebooks/00-COOL-DEMO/*.ipynb ~/examples
+	cp ./anotebooks/aoi/*.geojson ~/examples
