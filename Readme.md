@@ -3,6 +3,22 @@
 Create xarrays from a cloud based data lake full of Cogs and STAC items in a STAC Catalog
 
 
+# GOALS
+
+1. Easy to install
+2. Easy to use
+3. Very small codebase
+4. Exploit others code and synergies
+
+
+# INSTALLATION
+
+1. cd pkg - make
+2. cd lib - make
+
+
+
+
 ## Three libraries
 
 litelasticLIB  litestacLib  xarrayLib
