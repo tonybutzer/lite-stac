@@ -1,1 +1,5 @@
 matplotlib
+shapely
+scikit-image
+geopandas
+ffmpeg
