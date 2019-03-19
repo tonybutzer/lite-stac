@@ -12,7 +12,7 @@ libreq:
 	sudo pip3 install jupyter
 
 gdal:
-	sudo add-apt-repository ppa:nextgis/ppa
+	# sudo add-apt-repository ppa:nextgis/ppa
 	sudo apt-get update && sudo apt-get install -y gdal-bin libgdal-dev libgdal20 libudunits2-0 libudunits2-dev
 	pip3 install gdal
 
