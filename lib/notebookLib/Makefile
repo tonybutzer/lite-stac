@@ -1,2 +1,3 @@
+PIP=pip install --user .
 build:
-	pip3 install -e .
+	${PIP}
