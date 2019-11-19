@@ -11,6 +11,9 @@ setup(name='dcindexLib',
       ],
       install_requires=[
           'folium',
+          'elasticsearch',
+          'boto3',
+          'pyproj',
       ],
 
       )
