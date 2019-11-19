@@ -1,5 +1,5 @@
 import logging
-from dcindexLib.ix_api_elastic import ix_elastic_all_metatdata
+from dcindexLib.ix_api_elastic import ix_elastic_all_metatdata_MTL
 
 
 # ################# MAIN ################### #
@@ -12,5 +12,5 @@ my_bucket = 'landsat-pds'
 top_directory_prefix = "c1/L8/172/062"
 e_index = 'rwanda'
 e_type ='cube'
-ix_elastic_all_metatdata(e_index, e_type, my_bucket, top_directory_prefix)
+ix_elastic_all_metatdata_MTL(e_index, e_type, my_bucket, top_directory_prefix)
 
